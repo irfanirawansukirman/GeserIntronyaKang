@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_geser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_gravity="bottom"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingLeft="@dimen/title_padding_left"
+        android:paddingRight="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left">
+
+        <Button
+            android:id="@+id/btn_geser_skip"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left|start"
+            android:text="Skip"
+            android:textColor="@color/skip_text_color" />
+
+        <LinearLayout
+            android:id="@+id/lin_geser_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" />
+
+        <com.iriras.geser_intronya_kang.FinishButton
+            android:id="@+id/next_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical|right|end"
+            android:background="@drawable/next_done_button_selector" />
+
+    </FrameLayout>
+</merge>
