@@ -1,4 +1,4 @@
-package com.iriras.geser_intronya_kang;
+package com.iriras.simpleonboarding;
 
 import android.content.Context;
 import android.content.res.Resources;

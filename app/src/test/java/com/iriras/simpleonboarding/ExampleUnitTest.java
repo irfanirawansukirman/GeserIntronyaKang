@@ -1,4 +1,4 @@
-package com.iriras.geserintronyakang;
+package com.iriras.simpleonboarding;
 
 import org.junit.Test;
 

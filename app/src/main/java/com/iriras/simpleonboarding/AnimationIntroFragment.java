@@ -1,12 +1,9 @@
-package com.iriras.geserintronyakang;
+package com.iriras.simpleonboarding;
 
 import android.animation.ObjectAnimator;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-
-import com.iriras.geser_intronya_kang.BaseIntroFragment;
-import com.iriras.geser_intronya_kang.CustomAnimationPageTransformerDelegate;
 
 /**
  * Created by miche on 04-04-2016.
@@ -14,6 +11,7 @@ import com.iriras.geser_intronya_kang.CustomAnimationPageTransformerDelegate;
 public class AnimationIntroFragment extends BaseIntroFragment implements CustomAnimationPageTransformerDelegate {
 
     private View mViewGeser;
+
 
     @Override
     protected String getTitle() {

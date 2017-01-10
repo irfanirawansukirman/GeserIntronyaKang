@@ -1,6 +1,7 @@
-package com.iriras.geser_intronya_kang;
+package com.iriras.simpleonboarding;
 
 import android.animation.ArgbEvaluator;
+import android.content.Context;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.iriras.geser_intronya_kang.R;
 
 /**
  * Created by irfan on 06/01/17.
@@ -26,13 +29,14 @@ public abstract class GeserIntroActivity extends AppCompatActivity {
     private boolean mShowSkipButton;
     private boolean mShowNextButton;
     private int mProgressCircleColor;
+    public Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(R.style.IntroActivity_Theme);
         setContentView(R.layout.geser_intro_activity);
-
+        mContext = this;
         //set up the progress linearlayout
         mProgressLayout = (LinearLayout) findViewById(R.id.lin_geser_progress);
 
@@ -158,7 +162,7 @@ public abstract class GeserIntroActivity extends AppCompatActivity {
         }
     };
 
-    private void setProgressSelection(int position) {
+    protected void setProgressSelection(int position) {
         for (int i = 0; i < mProgressLayout.getChildCount(); i++) {
             mProgressLayout.getChildAt(i).setBackgroundResource(i == position ?
                     R.drawable.progress_circle_selected :
@@ -190,7 +194,7 @@ public abstract class GeserIntroActivity extends AppCompatActivity {
      *
      * @param introScreen Fragment to add.
      */
-    protected void addBoardingPage(BaseIntroFragment introScreen, int backGroundColor) {
+    protected void addOnBoardingPage(BaseIntroFragment introScreen, int backGroundColor) {
         mPagerAdapter.addFragment(introScreen, backGroundColor);
     }
 

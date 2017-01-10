@@ -1,4 +1,4 @@
-package com.iriras.geser_intronya_kang;
+package com.iriras.simpleonboarding;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.iriras.geser_intronya_kang.R;
 
 /**
  * Created by irfan on 09/01/17.

@@ -10,7 +10,6 @@
         android:id="@+id/viewstub"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/title_padding_left"
         android:layout_weight="1" />
 
     <TextView
@@ -18,24 +17,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:paddingEnd="@dimen/title_padding_right"
         android:paddingLeft="@dimen/title_padding_left"
         android:paddingRight="@dimen/title_padding_right"
         android:paddingStart="@dimen/title_padding_left"
         android:textColor="@color/title_color"
-        android:textSize="26sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/description_margin_bottom"
+        android:layout_marginTop="8dp"
         android:ellipsize="middle"
         android:gravity="center"
-        android:lines="2"
-        android:padding="@dimen/description_padding"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="@dimen/description_padding"
+        android:paddingRight="@dimen/description_padding"
         android:textColor="@color/description_color"
-        android:textSize="18sp" />
+        android:textSize="14sp" />
 </LinearLayout>

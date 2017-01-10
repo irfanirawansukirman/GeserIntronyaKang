@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:orientation="horizontal" />
 
-        <com.iriras.geser_intronya_kang.FinishButton
+        <com.iriras.simpleonboarding.FinishButton
             android:id="@+id/next_button"
             android:layout_width="56dp"
             android:layout_height="56dp"

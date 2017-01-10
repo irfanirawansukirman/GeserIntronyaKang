@@ -1,4 +1,4 @@
-package com.iriras.geser_intronya_kang;
+package com.iriras.simpleonboarding;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -10,6 +10,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
+
+import com.iriras.geser_intronya_kang.R;
 
 /**
  * Created by irfan on 09/01/17.
