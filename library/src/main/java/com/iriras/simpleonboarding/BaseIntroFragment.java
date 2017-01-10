@@ -44,7 +44,7 @@ public abstract class BaseIntroFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.geser_page, container, false);
+        return inflater.inflate(R.layout.boarding_page, container, false);
     }
 
     @Override
@@ -78,7 +78,7 @@ public abstract class BaseIntroFragment extends Fragment {
                 break;
 
             case RESOURCE_TYPE_DRAWABLE:
-                viewStub.setLayoutResource(R.layout.geser_drawable);
+                viewStub.setLayoutResource(R.layout.boarding_drawable);
                 viewStub.inflate();
 
                 ImageView mImageView = (ImageView) view.findViewById(R.id.imageview);

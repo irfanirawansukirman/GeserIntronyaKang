@@ -9,7 +9,7 @@ import com.iriras.geser_intronya_kang.R;
  * Created by irfan on 09/01/17.
  */
 
-public class GeserIntroFragment extends BaseIntroFragment {
+public class BoardingIntroFragment extends BaseIntroFragment {
     private static final String TITLE = "title";
     private static final String TITLE_COLOR = "titleColor";
     private static final String DESCRIPTION = "description";
@@ -18,59 +18,8 @@ public class GeserIntroFragment extends BaseIntroFragment {
     private static final String DRAWABLE_ID = "drawableId";
     private static final String RESOURCE_ID_TYPE = "resourceIdType";
 
-    //    //parameter title, description
-//    public static GeserIntroFragment newInstance(String title,
-//                                                 String description) {
-//
-//        Bundle args = new Bundle();
-//
-//        GeserIntroFragment fragment = new GeserIntroFragment();
-//        args.putString(TITLE, title);
-//        args.putString(DESCRIPTION, description);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
-//
-    //parameter title, description, resource id, resource id type
-//    public static GeserIntroFragment addItemIntoScreen(String title,
-//                                                       int titleColor,
-//                                                       String description,
-//                                                       int descriptionColor,
-//                                                       int resourceId,
-//                                                       int resourceIdType) {
-//
-//        Bundle args = new Bundle();
-//
-//        GeserIntroFragment fragment = new GeserIntroFragment();
-//        args.putString(TITLE, title);
-//        args.putInt(TITLE_COLOR, titleColor);
-//        args.putInt(DESCRIPTION_COLOR, descriptionColor);
-//        args.putString(DESCRIPTION, description);
-//        args.putInt(RESOURCE_ID_TYPE, resourceIdType);
-//        args.putInt(resourceIdType == RESOURCE_TYPE_LAYOUT ? LAYOUT_ID : DRAWABLE_ID, resourceId);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
-//
-//    //parameter title, title color, description, description color
-//    public static GeserIntroFragment newInstance(String title,
-//                                                 int titleColor,
-//                                                 String description,
-//                                                 int descriptionColor) {
-//
-//        Bundle args = new Bundle();
-//
-//        GeserIntroFragment fragment = new GeserIntroFragment();
-//        args.putString(TITLE, title);
-//        args.putInt(TITLE_COLOR, titleColor);
-//        args.putString(DESCRIPTION, description);
-//        args.putInt(DESCRIPTION_COLOR, descriptionColor);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
-
     //    parameter title, title color, description, description color, resource id, resource id type
-    public static GeserIntroFragment addItemIntoScreen(String title,
+    public static BoardingIntroFragment addItemIntoScreen(String title,
                                                        int titleColor,
                                                        String description,
                                                        int descriptionColor,
@@ -79,7 +28,7 @@ public class GeserIntroFragment extends BaseIntroFragment {
 
         Bundle args = new Bundle();
 
-        GeserIntroFragment fragment = new GeserIntroFragment();
+        BoardingIntroFragment fragment = new BoardingIntroFragment();
         args.putString(TITLE, title);
         args.putInt(TITLE_COLOR, titleColor);
         args.putString(DESCRIPTION, description);

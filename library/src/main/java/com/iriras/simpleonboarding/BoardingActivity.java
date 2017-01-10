@@ -18,7 +18,7 @@ import com.iriras.geser_intronya_kang.R;
  * Created by irfan on 06/01/17.
  */
 
-public abstract class GeserIntroActivity extends AppCompatActivity {
+public abstract class BoardingActivity extends AppCompatActivity {
 
     private final ArgbEvaluator mArgbEvaluator = new ArgbEvaluator();
     private ViewPager mViewPager;
@@ -34,8 +34,9 @@ public abstract class GeserIntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setTheme(R.style.IntroActivity_Theme);
-        setContentView(R.layout.geser_intro_activity);
+        setContentView(R.layout.boarding_activity);
         mContext = this;
         //set up the progress linearlayout
         mProgressLayout = (LinearLayout) findViewById(R.id.lin_geser_progress);
